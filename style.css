@@ -1,0 +1,260 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: poppins;
+	background-image: url(path.jpg);
+	background-size:cover;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  animation: mybo infinite 20s ease-in-out;
+
+}
+.burger .me h1{
+font-size: 30px;
+color: red;
+top: 20%;
+left: 53%;
+z-index: 1;
+border: 3px solid white;
+padding: 5px;
+box-shadow: 5px 5px 0px 0px  rgba(256, 0, 0, .2);
+overflow: hidden;
+
+}
+
+img {
+	position: absolute;
+	top: 20%;
+  left: 45%;
+	width: 30%;
+	z-index: 0;
+	overflow: hidden;
+}
+nav{
+	
+	position: relative;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0px rgba(0, 0, 0, .1);
+}
+nav a{
+	text-decoration: none;
+	color: red;
+	font-size: 15px;
+	line-height: 50px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+}
+nav .animation{
+	position: absolute;
+	background: red;
+	height: 7%;
+	bottom: 0;
+	z-index: 0;
+	border-radius: 9px;
+	transition: all .6s ease 0s ;
+
+}
+
+
+a:nth-child(1){
+	position: absolute;
+	width: 100px;
+	left: 0%;
+}
+nav .start-home , a:nth-child(1):hover~.animation{
+  width: 100px;
+  position: absolute;
+  left: 0%;
+
+}
+a:nth-child(2){
+	position: absolute;
+	width: 110px;
+	left: 20%;
+}
+nav .start-home , a:nth-child(2):hover~.animation{
+position: absolute;
+	width: 110px;
+	left: 20%;}
+a:nth-child(3){
+	width: 140px;
+	position: absolute;
+	left: 40%;
+}
+nav .start-home , a:nth-child(3):hover~.animation{
+  width: 140px;
+	position: absolute;
+	left: 40%;
+}
+a:nth-child(4){
+	width: 130px;
+	position: absolute;
+	left: 60%;
+}nav .start-home , a:nth-child(4):hover~.animation{
+  width: 130px;
+	position: absolute;
+	left: 60%;
+}
+
+a:nth-child(5){
+	width: 100px;
+    position: absolute;
+    left: 80%;
+}
+nav .start-home , a:nth-child(5):hover~.animation{
+  width: 100px;
+    position: absolute;
+    left: 80%;
+}
+
+
+.burger h1{
+	position: absolute;
+  font-size: 35px;
+  top: 35%;
+  left: 8%;
+  color: white;
+  overflow: hidden;
+}
+.burger h3{
+    position: absolute;
+    font-size: 25px;
+    top: 45%;
+    left: 14%;
+    color: orange;
+    overflow: hidden;
+
+}
+.burger button{
+   position: absolute;
+   top: 58%;
+   left: 17%;
+   width: 15%;
+   padding: 8px;
+   background-color: transparent;
+   font-size: 20px;
+   overflow: hidden;
+   color: white;
+   border: 4px solid indianred;
+   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+}
+.burger button:hover{
+	color: crimson;
+}
+span{
+	color: red;
+	font-size: 40px;
+	overflow: hidden;
+}
+
+span::before{
+	content: '';
+	animation: myanim infinite 10s;
+
+}
+@keyframes myanim{
+ 0%{
+ 	content: 'web developer';
+
+ }
+25%{
+ 	content: 'photgrapher';
+ 	
+ }
+ 50%{
+ 	content: 'fitness coach';
+ 	
+ }
+ 100%{
+ 	content: 'youtuber';
+ 	
+ }
+
+}
+@media(max-width: 1080px){
+  img{
+  	display: none;
+  }
+  .burger button{
+  	width: 30%;
+  }
+
+}
+@media(max-height: 200px){
+
+.burger .me h1{
+
+	display: none;
+}
+img{
+	box-sizing: border-box;
+}
+
+}
+.box{
+	padding: 120px;
+	height: 100px;
+	border: 2px solid crimson;
+	background-color: transparent;
+	position: absolute;
+	left: 80%;
+	top: 30%;
+	
+
+}
+@keyframes mybo{
+  0%{
+  	background-image: url(shit.jpg);
+  	background-position: center;
+  	background-size: cover;
+  }
+  50%{
+background-image: url(roling.jpg);
+  	background-image: center;
+  	background-size: cover;
+
+  }
+  70%{
+background-image: url(pop.jpg);
+  	background-position: center;
+    background-size: cover;
+  }
+
+}
+
+footer{
+	position: absolute;
+	height: 50px;
+	padding: 20px;
+	background: transparent;
+	text-align: center;
+	font-size: 20px;
+	bottom: 0px;
+	width: 97.1%;
+
+}
+#scme ul{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	margin: 0;
+	padding: 0;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+#scme ul li {
+	list-style: none;
+	margin: 0 15px;
+
+}
+#scme ul li a{
+	
+}
